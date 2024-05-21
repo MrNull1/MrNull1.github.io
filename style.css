@@ -1,0 +1,93 @@
+@font-face {
+    font-family: SSP;
+    src: url(./fonts/SourceSans3-VariableFont_wght.ttf);
+}
+
+@keyframes pan {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+
+@keyframes desktop-logo{
+    0%{transform: rotate(-10deg);}
+    50%{transform: rotate(10deg);}
+    100%{transform: rotate(-10deg);}
+}
+
+.top-bar{
+    background-color: rgb(48, 46, 54);
+    width: 100%;
+    height: 7em;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+}
+body{
+    background-color: rgb(31, 31, 31);
+}
+
+#desktop{
+    background-image: url(./images/Repeating-BG.png);
+    background-size: 8%;
+    image-rendering: pixelated;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    translate: -50% 0%;
+    height: 100%;
+    width: 100%;
+    min-width: 1200px;
+    animation: pan 45s linear infinite;
+    will-change: background-position;
+}
+
+.logos{
+    height: 5em;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+    transition: 0.3s;
+    color: white;
+    font: SSP;
+    font-weight: bolder;  
+}
+
+
+
+.logos:hover{
+    height: 5.5em;
+    filter: invert(0%);
+}
+
+.logos:hover #polished{
+    filter: invert(60%);
+    height: 5.5em;
+}
+
+.logo-area{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    animation-name: desktop-logo;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+h1{
+    font-family: SSP;
+    font-size: 6em;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    padding: 0px 0px;
+}
