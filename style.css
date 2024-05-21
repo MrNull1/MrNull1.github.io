@@ -33,7 +33,7 @@ body{
     background-color: rgb(31, 31, 31);
     display: flexbox;
     max-width: fit-content;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #desktop{
@@ -101,4 +101,37 @@ h1{
 
 #main-logo:hover{
     height: 6em;
+}
+
+.mrnull{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 1em;
+    scale: 65%;
+}
+
+#index{
+    background-image: url(./images/Dots.png);
+    background-size: 1%;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    translate: -50% 0%;
+    height: 100%;
+    width: 100%;
+    min-width: 1200px;
+    animation: pan 90s linear infinite;
+    will-change: background-position;
+}
+
+h2{
+    text-align: left;
+    font-family: SSP;
+    font-weight: bold;
+    color: darkgray;
+    font-size: 5em;
+    border-color: black;
+    border-left-width: 2em;
 }
