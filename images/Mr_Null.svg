@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 485.5 173.17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Komet-Black, Komet;
+        font-size: 112.59px;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        fill: red;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="169.64" width="71.15" height="173.17"/>
+  <text class="cls-1" transform="translate(0 119.68)"><tspan x="0" y="0">Mr</tspan></text>
+  <text class="cls-1" transform="translate(257.07 119.68)"><tspan x="0" y="0">Null</tspan></text>
+</svg>
