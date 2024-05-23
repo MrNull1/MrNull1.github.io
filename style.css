@@ -1,0 +1,201 @@
+@font-face {
+    font-family: SSP;
+    src: url(./fonts/SourceSans3-VariableFont_wght.ttf);
+}
+
+@keyframes pan {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+
+@keyframes desktop-logo{
+    0%{
+        transform: rotate(-10deg) scale(80%); 
+    }
+    25%{
+        transform: scale(100%);
+    }
+    50%{
+        transform: rotate(10deg) scale(80%);
+    }
+    75%{
+        transform: scale(100%);
+    }
+    100%{
+        transform: rotate(-10deg) scale(80%); 
+    }
+}
+
+.top-bar{
+    background-color: rgb(48, 46, 54);
+    height: 7em;
+    justify-content: center;
+    border: none;
+    align-items: center;
+    border-radius: 25px;
+    text-align: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+}
+body{
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    width: 100%;
+}
+
+#desktop{
+    background-image: url(./images/Repeating-BG.png);
+    background-size: 8%;
+    image-rendering: pixelated;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    translate: -50% 0%;
+    height: 100%;
+    width: 100%;
+    min-width: 1200px;
+    animation: pan 45s linear infinite;
+    will-change: background-position;
+}
+
+.logos{
+    height: 5em;
+    padding: 0px 25px;
+    transition: 0.3s;
+    color: white;
+    font: SSP;
+    font-weight: bolder;  
+    justify-self: center;
+}
+
+
+
+.logos:hover{
+    height: 5.5em;
+    filter: invert(0%);
+}
+
+.logos:hover #polished{
+    filter: invert(60%);
+    height: 5.5em;
+}
+
+.logo-area{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    animation-name: desktop-logo;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    display: flex;
+}
+
+h1{
+    font-family: SSP;
+    font-size: 6em;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    padding: 0px 0px;
+}
+
+#main-logo{
+    height: 5.5em;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+#main-logo:hover{
+    height: 6em;
+}
+
+.mrnull{
+    justify-content: center;
+    text-align: center;
+    padding-top: 1em;
+    scale: 65%;
+}
+
+#index{
+    background-image: url(./images/Dots.png);
+    background-size: 2%;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    translate: -50% 0%;
+
+    min-width: 1200px;
+    animation: pan 90s linear infinite;
+    will-change: background-position;
+}
+
+h2{
+    text-align: left;
+    font-family: SSP;
+    font-weight: bold;
+    color: darkgray;
+    font-size: 5em;
+    border-color: black;
+    border-left-width: 2em;
+    padding: 0px 0px;
+}
+
+.info{
+    background: linear-gradient(45deg, rgba(60, 60, 60, 0.4), rgba(12, 12, 12, 0.4));
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(3.2px);
+    border: 7px solid rgb(40, 40, 40);
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    justify-self: center;
+}
+.info h3{
+    font-size: 7em;
+    font-family: SSP;
+    color: whitesmoke;
+    margin-left: 1em;
+    padding-left: .5em;
+    border-left: 20px solid whitesmoke;
+}
+
+.info{
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-family: SSP;
+    padding: 2em, 2em;
+}
+
+.info p{
+    margin-left: 10em;
+}
+.info ul{
+    margin-left: 10em;
+}
+
+.info a:link{
+    font-style: normal;
+    color: lightblue;
+}
+
+#project-rack{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.rack-item{
+    border-radius: 20px;
+    width: 8em;
+    height: 13em;
+}
