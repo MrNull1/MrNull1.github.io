@@ -1,5 +1,5 @@
 window.onload = function () {
-    var time = 299, // your time in seconds here
+    var time = 59, // your time in seconds here
         display = document.querySelector('#timer');
     startTimer(time, display);
 };
