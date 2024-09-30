@@ -16,7 +16,7 @@ function startTimer(duration, display) {
         display.textContent = minutes + ":" + seconds;
 
         if (--timer < 0) {
-            
+            document.getElementById('explosion').style.display = 'block';
             // timer = duration; // uncomment this line to reset timer automatically after reaching 0
         }
     }, 1000);
